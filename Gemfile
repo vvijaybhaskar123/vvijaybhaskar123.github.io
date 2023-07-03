@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+gem "jekyll", "~> 3.9.1"
+gem "freelancer-theme-jekyll", "~> 1.0"
+gem "kramdown-parser-gfm", "~> 1.1"
+gem "webrick"

@@ -1,13 +1,36 @@
 <!-- Header -->
+<style>
+    .img-responsive {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: center;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .img-responsive:hover {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+        background: linear-gradient(to bottom right, #FFC0CB, #87CEEB);
+    }
+
+   
+</style>
+
 <header>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="img/profile.png" alt="">
+                <img class="img-responsive" src="img/vijay.jpeg" alt="">
                 <div class="intro-text">
-                    <span class="name">{{ site.title }}</span>
+                    <span class="name">Welcome To My Website</span>
                     <hr class="star-light">
-                    <span class="skills">{{ site.description }}</span>
+                    <span class="skills">Frontend Developer - React.js Developer</span>
                 </div>
             </div>
         </div>

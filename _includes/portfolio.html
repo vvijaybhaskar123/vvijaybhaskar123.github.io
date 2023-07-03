@@ -1,25 +1,61 @@
 <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                {% for post in site.posts %}
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#{{ post.modalID }}" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="{{ site.baseurl }}/{{ post.img }}" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                {% endfor %}
+<style>
+    #portfolio {
+        background: linear-gradient(45deg, #FFFFFF, #F9F1F1);
+    }
+
+    .skill-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+        background: none;
+    }
+
+    .skill-image:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 576px) {
+        .portfolio-item {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Skills</h2>
+                <hr class="star-primary">
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3 portfolio-item">
+                <a class="portfolio-link">
+                    <img src="img/html.webp" class="skill-image" alt="HTML">
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 portfolio-item">
+                <a class="portfolio-link">
+                    <img src="img/css1.webp" class="skill-image" alt="CSS">
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 portfolio-item">
+                <a class="portfolio-link">
+                    <img src="img/JavaScript-Logo.png" class="skill-image" alt="JavaScript">
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 portfolio-item">
+                <a class="portfolio-link">
+                    <img src="img/React-logo.png" class="skill-image" alt="React">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
